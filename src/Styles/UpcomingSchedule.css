@@ -1,0 +1,152 @@
+.upcoming-schedule {
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.8rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 0.3rem;
+  margin-right: 2rem;
+}
+
+.upcoming-schedule h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.schedule-day {
+  margin-bottom: 0.8rem;
+}
+
+.schedule-day h4 {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  background: #f0f4f8;
+  border-radius: 8px;
+  padding: 0.4rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.event-icon {
+  margin-right: 0.4rem;
+  font-size: 1.1rem;
+}
+
+.time {
+  margin-left: auto;
+  color: #6c757d;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 1024px) {
+  .upcoming-schedule {
+    padding: 0.6rem;
+    max-height: 180px;
+    margin-right: 0.4rem; 
+  }
+
+  .upcoming-schedule h3 {
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+  }
+
+  .schedule-day {
+    margin-bottom: 0.6rem;
+  }
+
+  .schedule-day h4 {
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+  }
+
+  .event {
+    padding: 0.3rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.75rem;
+  }
+
+  .event-icon {
+    margin-right: 0.3rem;
+    font-size: 1rem;
+  }
+
+  .time {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .upcoming-schedule {
+    padding: 0.5rem;
+    max-height: 160px;
+    margin-right: 0.3rem; 
+  }
+
+  .upcoming-schedule h3 {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .schedule-day {
+    margin-bottom: 0.5rem;
+  }
+
+  .schedule-day h4 {
+    margin-bottom: 0.2rem;
+    font-size: 0.85rem;
+  }
+
+  .event {
+    padding: 0.2rem;
+    font-size: 0.7rem;
+  }
+
+  .event-icon {
+    font-size: 0.9rem;
+  }
+
+  .time {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .upcoming-schedule {
+    padding: 0.4rem;
+    max-height: 140px;
+    margin-right: 0.2rem; 
+  }
+
+  .upcoming-schedule h3 {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  .schedule-day {
+    margin-bottom: 0.4rem;
+  }
+
+  .schedule-day h4 {
+    font-size: 0.8rem;
+  }
+
+  .event {
+    font-size: 0.65rem;
+  }
+
+  .event-icon {
+    font-size: 0.8rem;
+  }
+
+  .time {
+    font-size: 0.6rem;
+  }
+}

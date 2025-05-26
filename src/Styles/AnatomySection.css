@@ -1,0 +1,256 @@
+.anatomy-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  overflow: hidden;
+  position: relative;
+  background-color: white; 
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-right: 0.5rem; 
+}
+
+.body-illustration {
+  position: relative;
+  width: 40%;
+  max-height: 450px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  margin-left: 10%;
+}
+
+.human-body-img {
+  width: 100%;
+  height: auto;
+  max-height: 450px; 
+  object-fit:cover;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+  background-color: transparent;
+}
+
+.indicator {
+  position: absolute;
+  background-color: #4f46e5;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.heart {
+  top: 20%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.leg {
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.health-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  margin-left: 15px;
+}
+
+.status-card {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 280px;
+  background-size: 10px 10px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.status-card:hover {
+  transform: scale(1.02);
+}
+
+.status-card.lungs {
+  background-color: #e0f7fa;
+}
+
+.status-card.teeth {
+  background-color: #e6f4ea;
+}
+
+.status-card.bone {
+  background-color: #f5f5f5;
+}
+
+.status-icon {
+  font-size: 32px;
+  margin-right: 12px;
+}
+
+.status-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.status-details p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.status-details p:nth-child(1) {
+  font-weight: bold;
+}
+
+.status-details p:nth-child(2) {
+  color: #10b981;
+}
+
+.status-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  margin: 6px 0;
+  overflow: hidden;
+}
+
+.status-bar::before {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 100%;
+  background-color: #10b981;
+  border-radius: 3px;
+}
+
+
+@media (max-width: 1024px) {
+  .anatomy-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin-right: 0.4rem; 
+  }
+
+  .body-illustration {
+    width: 60%;
+    max-height: 350px;
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .human-body-img {
+    max-height: 350px;
+  }
+
+  .health-status {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .status-card {
+    width: 100%;
+    max-width: 350px;
+    padding: 0.9rem;
+  }
+
+  .status-icon {
+    font-size: 28px;
+    margin-right: 10px;
+  }
+
+  .status-details p {
+    font-size: 15px;
+  }
+
+  .status-bar {
+    height: 5px;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .body-illustration {
+    width: 80%;
+    max-height: 300px;
+  }
+
+  .human-body-img {
+    max-height: 300px;
+  }
+
+  .status-card {
+    padding: 0.8rem;
+    max-width: 100%;
+  }
+
+  .status-icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  .status-details p {
+    font-size: 14px;
+  }
+
+  .indicator {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .status-bar {
+    height: 4px;
+    margin: 4px 0;
+  }
+
+  .anatomy-section {
+    margin-right: 0.3rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .body-illustration {
+    width: 100%;
+    max-height: 250px;
+  }
+
+  .human-body-img {
+    max-height: 250px;
+  }
+
+  .status-card {
+    padding: 0.6rem;
+  }
+
+  .status-icon {
+    font-size: 20px;
+  }
+
+  .status-details p {
+    font-size: 13px;
+  }
+
+  .indicator {
+    font-size: 9px;
+    padding: 3px 6px;
+  }
+
+  .status-bar {
+    height: 3px;
+    margin: 3px 0;
+  }
+
+  .anatomy-section {
+    margin-right: 0.2rem; 
+  }
+}

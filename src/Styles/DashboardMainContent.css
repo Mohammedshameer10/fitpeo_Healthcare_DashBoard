@@ -1,0 +1,93 @@
+.dashboard-main-content {
+  padding: 1.5rem 3.5rem 1.5rem 1.5rem; 
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 210px;
+}
+
+.dashboard-main-content h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.dashboard-layout {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.8rem;
+}
+
+.anatomy-section {
+  flex: 2;
+  min-width: 300px;
+  max-height: 650px;
+  overflow-y: auto;
+  margin-left: 0;
+}
+
+.right-side {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-main-content {
+    margin-left: 190px;
+    padding: 1rem 3rem 1rem 1rem; 
+  }
+
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .anatomy-section,
+  .right-side {
+    width: 100%;
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-main-content {
+    margin-left: 0;
+    padding: 1rem 2.5rem 1rem 1rem; 
+  }
+
+  .anatomy-section {
+    max-height: 450px;
+    margin-bottom: 0.5rem;
+  }
+
+  .right-side {
+    gap: 0.4rem;
+  }
+
+  .dashboard-main-content h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-main-content {
+    padding: 0.8rem 2rem 0.8rem 0.8rem; 
+  }
+
+  .anatomy-section {
+    max-height: 400px;
+  }
+
+  .dashboard-main-content h1 {
+    font-size: 1.2rem;
+  }
+  
+}
+.dashboard-main{
+    margin-left: 10px;
+    font-family: Georgia;
+  }
